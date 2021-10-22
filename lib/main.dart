@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:rooster_hut_web_mob_app/themes/app_theme.dart';
 
+import 'screens/home_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: AppTheme.light,
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home:  const HomePage(),
     );
   }
 }
