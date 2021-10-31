@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:rooster_hut_web_mob_app/widgets/header.dart';
+import 'package:rooster_hut_web_mob_app/widgets/side_menu.dart';
 import 'package:rooster_hut_web_mob_app/widgets/widgets.dart';
 
 class HomePage extends StatelessWidget {
@@ -6,14 +8,33 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
-      body: Container(
-        decoration: const BoxDecoration(
-            gradient: LinearGradient(colors: [
-              Color(0xFFF8F8FF),
-              Color(0xFFFCFDFD),
-            ])),
-        child: SingleChildScrollView(child: Column(children: const <Widget>[NavBar()],),),
+      endDrawer: ConstrainedBox(
+        constraints: BoxConstraints(
+            maxWidth: 400
+        ),
+        child: Center(child: SideMenu()),
+      ),
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Container(
+            width: size.width,
+            constraints: BoxConstraints(
+                minHeight: size.height
+            ),
+
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Header(),
+
+
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
