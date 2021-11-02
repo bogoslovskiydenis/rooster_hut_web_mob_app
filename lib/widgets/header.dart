@@ -11,13 +11,17 @@ class Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+      margin: EdgeInsets.all(16),
       child: Row(
-        children: <Widget>[
-          Image.asset(
-            'assets/logo-all.png',
-            width: 50,
-          ),
+        children: [Container(decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.red),child: SizedBox(
+            height: 100,
+            width: 100,
+            child: IconButton(
+              onPressed: () => {print('Доставка')},
+              icon: Image.asset(
+                'assets/logo-all.png',
+              ),
+            )),),
 
           SizedBox(width: 10),
 
@@ -55,6 +59,7 @@ class Header extends StatelessWidget {
                 ),
               ],
             ),
+
 
           if (isMobile(context))
             IconButton(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rooster_hut_web_mob_app/widgets/banner.dart';
 import 'package:rooster_hut_web_mob_app/widgets/header.dart';
 import 'package:rooster_hut_web_mob_app/widgets/side_menu.dart';
 import 'package:rooster_hut_web_mob_app/widgets/widgets.dart';
@@ -26,13 +27,15 @@ class HomePage extends StatelessWidget {
 
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: const <Widget>[
                 Header(),
 
+                Banners(),
 
               ],
             ),
+
           ),
         ),
       ),
