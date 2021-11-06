@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:rooster_hut_web_mob_app/widgets/banner.dart';
-import 'package:rooster_hut_web_mob_app/widgets/header.dart';
-import 'package:rooster_hut_web_mob_app/widgets/side_menu.dart';
+import 'package:rooster_hut_web_mob_app/widgets/banner/banner.dart';
+import 'package:rooster_hut_web_mob_app/widgets/appbar/header.dart';
+import 'package:rooster_hut_web_mob_app/widgets/appbar/side_menu.dart';
 import 'package:rooster_hut_web_mob_app/widgets/widgets.dart';
 
 class HomePage extends StatelessWidget {
@@ -32,6 +32,8 @@ class HomePage extends StatelessWidget {
                 Header(),
 
                 Banners(),
+
+                MenuItem(),
 
               ],
             ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:rooster_hut_web_mob_app/widgets/utils_ui/responcive.dart';
 
-import 'utils_ui/responcive.dart';
 
 class Banners extends StatelessWidget {
   const Banners({Key? key}) : super(key: key);

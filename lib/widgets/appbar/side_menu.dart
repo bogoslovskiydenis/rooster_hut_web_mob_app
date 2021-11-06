@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'menu_item.dart';
+import 'appbar_item/nav_item.dart';
 
 class SideMenu extends StatelessWidget {
   @override

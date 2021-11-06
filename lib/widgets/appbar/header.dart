@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:rooster_hut_web_mob_app/widgets/menu_item.dart';
+import 'package:rooster_hut_web_mob_app/widgets/appbar/appbar_item/nav_item.dart';
 import 'package:rooster_hut_web_mob_app/widgets/utils_ui/responcive.dart';
 
 class Header extends StatelessWidget {
