@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rooster_hut_web_mob_app/widgets/banner/banner.dart';
 import 'package:rooster_hut_web_mob_app/widgets/appbar/header.dart';
 import 'package:rooster_hut_web_mob_app/widgets/appbar/side_menu.dart';
-import 'package:rooster_hut_web_mob_app/widgets/widgets.dart';
+import 'package:rooster_hut_web_mob_app/widgets/menu_item/menu.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);

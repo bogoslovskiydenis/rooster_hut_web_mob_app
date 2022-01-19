@@ -19,7 +19,6 @@ class SideMenu extends StatelessWidget {
               ),
 
               SizedBox(height: 10),
-
               NavItem(
                 title: 'Donate',
                 tapEvent: () {},
